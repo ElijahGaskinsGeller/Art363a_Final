@@ -1,0 +1,22 @@
+.container{
+    height: 300vh !important;
+}
+
+.main-canvas{
+    height: 100vh !important;
+    position: fixed !important;
+}
+
+@media only screen and (max-width: 850px) {
+    .container{
+        width: 100% !important;
+    }
+    .main-canvas{
+        width: 100% !important;
+        background: blue;
+    }
+
+    #dom_overlay_container{
+        width: 100% !important;
+    }
+}
