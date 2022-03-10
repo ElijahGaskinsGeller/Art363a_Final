@@ -1,5 +1,5 @@
 .container{
-    height: 300vh !important;
+    height: 500vh !important;
 }
 
 .main-canvas{
@@ -7,16 +7,16 @@
     position: fixed !important;
 }
 
-@media only screen and (max-width: 850px) {
-    .container{
-        width: 100% !important;
-    }
-    .main-canvas{
-        width: 100% !important;
-        background: blue;
-    }
+/*@media only screen and (max-width: 850px) {*/
+/*    .container{*/
+/*        width: 100% !important;*/
+/*    }*/
+/*    .main-canvas{*/
+/*        width: 100% !important;*/
+/*        background: blue;*/
+/*    }*/
 
-    #dom_overlay_container{
-        width: 100% !important;
-    }
-}
+/*    #dom_overlay_container{*/
+/*        width: 100% !important;*/
+/*    }*/
+/*}*/
