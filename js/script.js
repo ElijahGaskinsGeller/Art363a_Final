@@ -33,6 +33,7 @@ function page_init(lib) {
     let blinds = page.blinds;
     let fallOnBed = page.fall_on_bed;
     let sinkIntoBed = page.sinking_into_bed;
+    let fallThroughSky = page.fall_through_sky;
 
     console.log(blinds);
 
@@ -81,6 +82,20 @@ function page_init(lib) {
         sinkIntoBed.gotoAndStop(sinkIntoBedCurrentFrame);
 
         page.y = lerp(scrollStart, scrollEnd, currentScroll);
+
+        let fallThroughSkyScroll = RectNormalPositionOnScreen(fallThroughSky.localToGlobal(0, 0).y, fallThroughSky.nominalBounds.height, canvas.clientHeight);
+        if(fallThroughSkyScroll >= 0 && fallThroughSkyScroll <= 1){
+            fallThroughSky.character.y = fallThroughSky.globalToLocal(0,canvas.clientHeight/2).y - 25;
+            fallThroughSky.scream_text.y = fallThroughSky.character.y - 50;
+
+            let fallThroughSkyCurrentFrame = Math.abs(clamp(fallThroughSkyScroll * fallThroughSky.character.totalFrames - 1, 0, fallThroughSky.character.totalFrames - 1));
+            fallThroughSky.character.gotoAndStop(fallThroughSkyCurrentFrame);
+
+            let screamTextScroll = RectNormalPositionOnScreen(fallThroughSky.localToGlobal(0, 0).y + 500, fallThroughSky.nominalBounds.height, canvas.clientHeight);
+            let screamTextCurrentFrame = Math.abs(clamp(screamTextScroll * fallThroughSky.scream_text.totalFrames - 1, 0, fallThroughSky.scream_text.totalFrames - 1));
+            fallThroughSky.scream_text.gotoAndStop(screamTextCurrentFrame);
+        }
+
         // console.log("start: " + scrollStart);
         // console.log("current: " + page.y);
         // console.log("end: " + scrollEnd);
