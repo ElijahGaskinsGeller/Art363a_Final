@@ -77,21 +77,33 @@ function page_init(lib) {
         let fallOnBedCurrentFrame = clamp(fallOnBedScroll * (fallOnBed.totalFrames - 1), 0, fallOnBed.totalFrames - 1);
         fallOnBed.gotoAndStop(fallOnBedCurrentFrame);
 
-        let sinkIntoBedScroll = RectNormalPositionOnScreen(sinkIntoBed.localToGlobal(0, 0).y + 150, sinkIntoBed.nominalBounds.height -250, canvas.clientHeight);
+        let sinkIntoBedScroll = RectNormalPositionOnScreen(sinkIntoBed.localToGlobal(0, 0).y + 150, sinkIntoBed.nominalBounds.height - 250, canvas.clientHeight);
         let sinkIntoBedCurrentFrame = clamp(sinkIntoBedScroll * sinkIntoBed.totalFrames - 1, 0, sinkIntoBed.totalFrames - 1);
         sinkIntoBed.gotoAndStop(sinkIntoBedCurrentFrame);
 
         page.y = lerp(scrollStart, scrollEnd, currentScroll);
 
-        let fallThroughSkyScroll = RectNormalPositionOnScreen(fallThroughSky.localToGlobal(0, 0).y, fallThroughSky.nominalBounds.height, canvas.clientHeight);
-        if(fallThroughSkyScroll >= 0 && fallThroughSkyScroll <= 1){
-            fallThroughSky.character.y = fallThroughSky.globalToLocal(0,canvas.clientHeight/2).y - 25;
+        // let fallThroughSkyScroll = RectNormalPositionOnScreen(fallThroughSky.localToGlobal(0, 0).y-canvas.clientHeight, fallThroughSky.nominalBounds.height, canvas.clientHeight);
+        let fallThroughSkyScroll = RectNormalPositionOnScreen(page.y + fallThroughSky.y , fallThroughSky.nominalBounds.height, canvas.clientHeight);
+        console.log("fall through sky scroll: " + fallThroughSkyScroll);
+        // console.log("page: " + page.y);
+        // console.log("fall through sky: " + fallThroughSky.y);
+        // console.log("character: " + fallThroughSky.character.y);
+        // console.log("canvas height: " + canvas.clientHeight);
+        // console.log("fall through sky global: "+fallThroughSky.localToGlobal(0,0).y);
+        // console.log(fallThroughSky.nominalBounds);
+
+        if (fallThroughSkyScroll >= 0 && fallThroughSkyScroll <= 1) {
+            // fallThroughSky.character.y = fallThroughSky.globalToLocal(0,canvas.clientHeight/2).y - 25;
+            fallThroughSky.character.y = Math.abs(page.y) - fallThroughSky.y + (canvas.clientHeight / 2) + (fallThroughSky.character.nominalBounds.height / 2);
             fallThroughSky.scream_text.y = fallThroughSky.character.y - 50;
+
 
             let fallThroughSkyCurrentFrame = Math.abs(clamp(fallThroughSkyScroll * fallThroughSky.character.totalFrames - 1, 0, fallThroughSky.character.totalFrames - 1));
             fallThroughSky.character.gotoAndStop(fallThroughSkyCurrentFrame);
 
-            let screamTextScroll = RectNormalPositionOnScreen(fallThroughSky.localToGlobal(0, 0).y + 500, fallThroughSky.nominalBounds.height, canvas.clientHeight);
+            // let screamTextScroll = RectNormalPositionOnScreen(fallThroughSky.localToGlobal(0, 0).y + 500, fallThroughSky.nominalBounds.height, canvas.clientHeight);
+            let screamTextScroll = RectNormalPositionOnScreen(page.y + fallThroughSky.y +500, fallThroughSky.nominalBounds.height, canvas.clientHeight);
             let screamTextCurrentFrame = Math.abs(clamp(screamTextScroll * fallThroughSky.scream_text.totalFrames - 1, 0, fallThroughSky.scream_text.totalFrames - 1));
             fallThroughSky.scream_text.gotoAndStop(screamTextCurrentFrame);
         }

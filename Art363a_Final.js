@@ -35,8 +35,15 @@ lib.ssMetadata = [
 
 
 
-(lib.CachedBmp_24 = function() {
+(lib.CachedBmp_25 = function() {
 	this.initialize(ss["Art363a_Final_atlas_7"]);
+	this.gotoAndStop(0);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.CachedBmp_24 = function() {
+	this.initialize(ss["Art363a_Final_atlas_8"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
@@ -44,20 +51,20 @@ lib.ssMetadata = [
 
 (lib.CachedBmp_23 = function() {
 	this.initialize(ss["Art363a_Final_atlas_8"]);
-	this.gotoAndStop(0);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.CachedBmp_22 = function() {
-	this.initialize(ss["Art363a_Final_atlas_8"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_21 = function() {
+(lib.CachedBmp_22 = function() {
 	this.initialize(ss["Art363a_Final_atlas_9"]);
+	this.gotoAndStop(0);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.CachedBmp_21 = function() {
+	this.initialize(ss["Art363a_Final_atlas_5"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
@@ -65,41 +72,41 @@ lib.ssMetadata = [
 
 (lib.CachedBmp_20 = function() {
 	this.initialize(ss["Art363a_Final_atlas_5"]);
-	this.gotoAndStop(0);
+	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_19 = function() {
 	this.initialize(ss["Art363a_Final_atlas_5"]);
-	this.gotoAndStop(1);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.CachedBmp_18 = function() {
-	this.initialize(ss["Art363a_Final_atlas_5"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_17 = function() {
+(lib.CachedBmp_18 = function() {
 	this.initialize(ss["Art363a_Final_atlas_6"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_16 = function() {
+(lib.CachedBmp_17 = function() {
 	this.initialize(ss["Art363a_Final_atlas_6"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_15 = function() {
+(lib.CachedBmp_16 = function() {
 	this.initialize(ss["Art363a_Final_atlas_7"]);
+	this.gotoAndStop(1);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.CachedBmp_15 = function() {
+	this.initialize(ss["Art363a_Final_atlas_9"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
@@ -107,41 +114,41 @@ lib.ssMetadata = [
 
 (lib.CachedBmp_14 = function() {
 	this.initialize(ss["Art363a_Final_atlas_9"]);
-	this.gotoAndStop(1);
+	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_13 = function() {
 	this.initialize(ss["Art363a_Final_atlas_9"]);
-	this.gotoAndStop(2);
+	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_12 = function() {
 	this.initialize(ss["Art363a_Final_atlas_9"]);
-	this.gotoAndStop(3);
+	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_11 = function() {
 	this.initialize(ss["Art363a_Final_atlas_9"]);
-	this.gotoAndStop(4);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.CachedBmp_10 = function() {
-	this.initialize(ss["Art363a_Final_atlas_9"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_9 = function() {
+(lib.CachedBmp_10 = function() {
 	this.initialize(ss["Art363a_Final_atlas_7"]);
+	this.gotoAndStop(2);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.CachedBmp_9 = function() {
+	this.initialize(ss["Art363a_Final_atlas_8"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
@@ -149,61 +156,54 @@ lib.ssMetadata = [
 
 (lib.CachedBmp_8 = function() {
 	this.initialize(ss["Art363a_Final_atlas_8"]);
-	this.gotoAndStop(2);
+	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_7 = function() {
 	this.initialize(ss["Art363a_Final_atlas_8"]);
-	this.gotoAndStop(3);
+	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_6 = function() {
-	this.initialize(ss["Art363a_Final_atlas_8"]);
-	this.gotoAndStop(4);
+	this.initialize(ss["Art363a_Final_atlas_4"]);
+	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_5 = function() {
 	this.initialize(ss["Art363a_Final_atlas_4"]);
-	this.gotoAndStop(0);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.CachedBmp_4 = function() {
-	this.initialize(ss["Art363a_Final_atlas_4"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_3 = function() {
+(lib.CachedBmp_4 = function() {
 	this.initialize(ss["Art363a_Final_atlas_3"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_2 = function() {
+(lib.CachedBmp_3 = function() {
 	this.initialize(ss["Art363a_Final_atlas_2"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_1 = function() {
+(lib.CachedBmp_2 = function() {
 	this.initialize(ss["Art363a_Final_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_25 = function() {
+(lib.CachedBmp_1 = function() {
 	this.initialize(ss["Art363a_Final_atlas_9"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
@@ -238,7 +238,7 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.instance = new lib.CachedBmp_24();
+	this.instance = new lib.CachedBmp_25();
 	this.instance.setTransform(0,0,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
@@ -260,25 +260,25 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_3
-	this.instance = new lib.CachedBmp_18();
+	this.instance = new lib.CachedBmp_19();
 	this.instance.setTransform(-102.25,32.95,0.5,0.5);
 
-	this.instance_1 = new lib.CachedBmp_19();
+	this.instance_1 = new lib.CachedBmp_20();
 	this.instance_1.setTransform(-102.2,31.25,0.5,0.5);
 
-	this.instance_2 = new lib.CachedBmp_20();
+	this.instance_2 = new lib.CachedBmp_21();
 	this.instance_2.setTransform(-101.8,30,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},6).to({state:[{t:this.instance_2}]},6).wait(6));
 
 	// Layer_2
-	this.instance_3 = new lib.CachedBmp_21();
+	this.instance_3 = new lib.CachedBmp_22();
 	this.instance_3.setTransform(1.9,27.35,0.5,0.5);
 
-	this.instance_4 = new lib.CachedBmp_22();
+	this.instance_4 = new lib.CachedBmp_23();
 	this.instance_4.setTransform(1.15,27.05,0.5,0.5);
 
-	this.instance_5 = new lib.CachedBmp_23();
+	this.instance_5 = new lib.CachedBmp_24();
 	this.instance_5.setTransform(-0.25,28,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_3}]}).to({state:[{t:this.instance_4}]},6).to({state:[{t:this.instance_5}]},6).wait(6));
@@ -318,13 +318,13 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_2
-	this.instance = new lib.CachedBmp_15();
+	this.instance = new lib.CachedBmp_16();
 	this.instance.setTransform(5.7,42.95,0.5,0.5);
 
-	this.instance_1 = new lib.CachedBmp_16();
+	this.instance_1 = new lib.CachedBmp_17();
 	this.instance_1.setTransform(5.55,43.3,0.5,0.5);
 
-	this.instance_2 = new lib.CachedBmp_17();
+	this.instance_2 = new lib.CachedBmp_18();
 	this.instance_2.setTransform(5.55,42.75,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},6).to({state:[{t:this.instance_2}]},6).wait(6));
@@ -357,13 +357,13 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_2
-	this.instance = new lib.CachedBmp_12();
+	this.instance = new lib.CachedBmp_13();
 	this.instance.setTransform(24.1,22.7,0.5,0.5);
 
-	this.instance_1 = new lib.CachedBmp_13();
+	this.instance_1 = new lib.CachedBmp_14();
 	this.instance_1.setTransform(22.75,22.15,0.5,0.5);
 
-	this.instance_2 = new lib.CachedBmp_14();
+	this.instance_2 = new lib.CachedBmp_15();
 	this.instance_2.setTransform(19.55,20.5,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},6).to({state:[{t:this.instance_2}]},6).wait(6));
@@ -396,7 +396,7 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.instance = new lib.CachedBmp_11();
+	this.instance = new lib.CachedBmp_12();
 	this.instance.setTransform(0,0,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
@@ -445,7 +445,7 @@ if (reversed == null) { reversed = false; }
 	this.shape.graphics.f("#000000").s().p("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");
 	this.shape.setTransform(-8.4894,6.8698);
 
-	this.instance = new lib.CachedBmp_10();
+	this.instance = new lib.CachedBmp_11();
 	this.instance.setTransform(-97.85,-54.65,0.5,0.5);
 
 	this.shape_1 = new cjs.Shape();
@@ -472,7 +472,7 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.instance = new lib.CachedBmp_9();
+	this.instance = new lib.CachedBmp_10();
 	this.instance.setTransform(0,0,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
@@ -501,10 +501,10 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(43));
 
 	// Layer_1
-	this.instance = new lib.CachedBmp_6();
+	this.instance = new lib.CachedBmp_7();
 	this.instance.setTransform(0,0,0.5,0.5);
 
-	this.instance_1 = new lib.CachedBmp_7();
+	this.instance_1 = new lib.CachedBmp_8();
 	this.instance_1.setTransform(0,0,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},22).wait(21));
@@ -527,19 +527,19 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.instance = new lib.CachedBmp_1();
+	this.instance = new lib.CachedBmp_2();
 	this.instance.setTransform(0,0,0.5,0.5);
 
-	this.instance_1 = new lib.CachedBmp_2();
+	this.instance_1 = new lib.CachedBmp_3();
 	this.instance_1.setTransform(118.3,6.7,0.5,0.5);
 
-	this.instance_2 = new lib.CachedBmp_3();
+	this.instance_2 = new lib.CachedBmp_4();
 	this.instance_2.setTransform(191.5,-20.7,0.5,0.5);
 
-	this.instance_3 = new lib.CachedBmp_4();
+	this.instance_3 = new lib.CachedBmp_5();
 	this.instance_3.setTransform(256.9,-52.25,0.5,0.5);
 
-	this.instance_4 = new lib.CachedBmp_5();
+	this.instance_4 = new lib.CachedBmp_6();
 	this.instance_4.setTransform(256.9,-56.15,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},2).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).to({state:[{t:this.instance_4}]},1).wait(2));
@@ -607,7 +607,7 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.shape_3).wait(9));
 
 	// Layer_2
-	this.instance = new lib.CachedBmp_25();
+	this.instance = new lib.CachedBmp_1();
 	this.instance.setTransform(-29.45,-82.95,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(9));
@@ -859,207 +859,767 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
-	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
 	this.instance = new lib.Sketch_Scream_A("synched",0);
 	this.instance.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
 	this.instance._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(56).to({_off:false},0).wait(70));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(215).to({_off:false},0).wait(70));
 
-	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
 	this.instance_1 = new lib.Sketch_Scream_A("synched",0);
 	this.instance_1.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
 	this.instance_1._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(54).to({_off:false},0).to({_off:true},70).wait(2));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(213).to({_off:false},0).to({_off:true},70).wait(2));
 
-	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
 	this.instance_2 = new lib.Sketch_Scream_A("synched",0);
 	this.instance_2.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
 	this.instance_2._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(52).to({_off:false},0).to({_off:true},70).wait(4));
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(211).to({_off:false},0).to({_off:true},70).wait(4));
 
-	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
 	this.instance_3 = new lib.Sketch_Scream_A("synched",0);
 	this.instance_3.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
 	this.instance_3._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(50).to({_off:false},0).to({_off:true},70).wait(6));
+	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(209).to({_off:false},0).to({_off:true},70).wait(6));
 
-	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
 	this.instance_4 = new lib.Sketch_Scream_A("synched",0);
 	this.instance_4.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
 	this.instance_4._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(48).to({_off:false},0).to({_off:true},70).wait(8));
+	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(207).to({_off:false},0).to({_off:true},70).wait(8));
 
-	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
 	this.instance_5 = new lib.Sketch_Scream_A("synched",0);
 	this.instance_5.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
 	this.instance_5._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(46).to({_off:false},0).to({_off:true},70).wait(10));
+	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(205).to({_off:false},0).to({_off:true},70).wait(10));
 
-	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
 	this.instance_6 = new lib.Sketch_Scream_A("synched",0);
 	this.instance_6.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
 	this.instance_6._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_6).wait(44).to({_off:false},0).to({_off:true},70).wait(12));
+	this.timeline.addTween(cjs.Tween.get(this.instance_6).wait(203).to({_off:false},0).to({_off:true},70).wait(12));
 
-	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
 	this.instance_7 = new lib.Sketch_Scream_A("synched",0);
 	this.instance_7.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
 	this.instance_7._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_7).wait(42).to({_off:false},0).to({_off:true},70).wait(14));
+	this.timeline.addTween(cjs.Tween.get(this.instance_7).wait(201).to({_off:false},0).to({_off:true},70).wait(14));
 
-	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
 	this.instance_8 = new lib.Sketch_Scream_A("synched",0);
 	this.instance_8.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
 	this.instance_8._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_8).wait(40).to({_off:false},0).to({_off:true},70).wait(16));
+	this.timeline.addTween(cjs.Tween.get(this.instance_8).wait(199).to({_off:false},0).to({_off:true},70).wait(16));
 
-	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
 	this.instance_9 = new lib.Sketch_Scream_A("synched",0);
 	this.instance_9.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
 	this.instance_9._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_9).wait(38).to({_off:false},0).to({_off:true},70).wait(18));
+	this.timeline.addTween(cjs.Tween.get(this.instance_9).wait(197).to({_off:false},0).to({_off:true},70).wait(18));
 
-	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
 	this.instance_10 = new lib.Sketch_Scream_A("synched",0);
 	this.instance_10.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
 	this.instance_10._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_10).wait(36).to({_off:false},0).to({_off:true},70).wait(20));
+	this.timeline.addTween(cjs.Tween.get(this.instance_10).wait(195).to({_off:false},0).to({_off:true},70).wait(20));
 
-	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
 	this.instance_11 = new lib.Sketch_Scream_A("synched",0);
 	this.instance_11.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
 	this.instance_11._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_11).wait(34).to({_off:false},0).to({_off:true},70).wait(22));
+	this.timeline.addTween(cjs.Tween.get(this.instance_11).wait(193).to({_off:false},0).to({_off:true},70).wait(22));
 
-	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
 	this.instance_12 = new lib.Sketch_Scream_A("synched",0);
 	this.instance_12.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
 	this.instance_12._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_12).wait(32).to({_off:false},0).to({_off:true},70).wait(24));
+	this.timeline.addTween(cjs.Tween.get(this.instance_12).wait(191).to({_off:false},0).to({_off:true},70).wait(24));
 
-	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
 	this.instance_13 = new lib.Sketch_Scream_A("synched",0);
 	this.instance_13.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
 	this.instance_13._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_13).wait(30).to({_off:false},0).to({_off:true},70).wait(26));
+	this.timeline.addTween(cjs.Tween.get(this.instance_13).wait(189).to({_off:false},0).to({_off:true},70).wait(26));
 
-	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
 	this.instance_14 = new lib.Sketch_Scream_A("synched",0);
 	this.instance_14.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
 	this.instance_14._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_14).wait(28).to({_off:false},0).to({_off:true},70).wait(28));
+	this.timeline.addTween(cjs.Tween.get(this.instance_14).wait(187).to({_off:false},0).to({_off:true},70).wait(28));
 
-	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
 	this.instance_15 = new lib.Sketch_Scream_A("synched",0);
 	this.instance_15.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
 	this.instance_15._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_15).wait(26).to({_off:false},0).to({_off:true},70).wait(30));
+	this.timeline.addTween(cjs.Tween.get(this.instance_15).wait(185).to({_off:false},0).to({_off:true},70).wait(30));
 
-	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
 	this.instance_16 = new lib.Sketch_Scream_A("synched",0);
 	this.instance_16.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
 	this.instance_16._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_16).wait(24).to({_off:false},0).to({_off:true},70).wait(32));
+	this.timeline.addTween(cjs.Tween.get(this.instance_16).wait(183).to({_off:false},0).to({_off:true},70).wait(32));
 
-	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
 	this.instance_17 = new lib.Sketch_Scream_A("synched",0);
 	this.instance_17.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
 	this.instance_17._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_17).wait(22).to({_off:false},0).to({_off:true},70).wait(34));
+	this.timeline.addTween(cjs.Tween.get(this.instance_17).wait(181).to({_off:false},0).to({_off:true},70).wait(34));
 
-	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
 	this.instance_18 = new lib.Sketch_Scream_A("synched",0);
 	this.instance_18.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
 	this.instance_18._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_18).wait(20).to({_off:false},0).to({_off:true},70).wait(36));
+	this.timeline.addTween(cjs.Tween.get(this.instance_18).wait(179).to({_off:false},0).to({_off:true},70).wait(36));
 
-	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
 	this.instance_19 = new lib.Sketch_Scream_A("synched",0);
 	this.instance_19.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
 	this.instance_19._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_19).wait(18).to({_off:false},0).to({_off:true},70).wait(38));
+	this.timeline.addTween(cjs.Tween.get(this.instance_19).wait(177).to({_off:false},0).to({_off:true},70).wait(38));
 
-	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
 	this.instance_20 = new lib.Sketch_Scream_A("synched",0);
 	this.instance_20.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
 	this.instance_20._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_20).wait(16).to({_off:false},0).to({_off:true},70).wait(40));
+	this.timeline.addTween(cjs.Tween.get(this.instance_20).wait(175).to({_off:false},0).to({_off:true},70).wait(40));
 
-	// Layer_2_copy_copy_copy_copy_copy_copy_copy
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
 	this.instance_21 = new lib.Sketch_Scream_A("synched",0);
 	this.instance_21.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
 	this.instance_21._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_21).wait(14).to({_off:false},0).to({_off:true},70).wait(42));
+	this.timeline.addTween(cjs.Tween.get(this.instance_21).wait(173).to({_off:false},0).to({_off:true},70).wait(42));
 
-	// Layer_2_copy_copy_copy_copy_copy_copy
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
 	this.instance_22 = new lib.Sketch_Scream_A("synched",0);
 	this.instance_22.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
 	this.instance_22._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_22).wait(12).to({_off:false},0).to({_off:true},70).wait(44));
+	this.timeline.addTween(cjs.Tween.get(this.instance_22).wait(171).to({_off:false},0).to({_off:true},70).wait(44));
 
-	// Layer_2_copy_copy_copy_copy_copy
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
 	this.instance_23 = new lib.Sketch_Scream_A("synched",0);
 	this.instance_23.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
 	this.instance_23._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_23).wait(10).to({_off:false},0).to({_off:true},70).wait(46));
+	this.timeline.addTween(cjs.Tween.get(this.instance_23).wait(169).to({_off:false},0).to({_off:true},70).wait(46));
 
-	// Layer_2_copy_copy_copy_copy
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
 	this.instance_24 = new lib.Sketch_Scream_A("synched",0);
 	this.instance_24.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
 	this.instance_24._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_24).wait(8).to({_off:false},0).to({_off:true},70).wait(48));
+	this.timeline.addTween(cjs.Tween.get(this.instance_24).wait(167).to({_off:false},0).to({_off:true},70).wait(48));
 
-	// Layer_2_copy_copy_copy
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
 	this.instance_25 = new lib.Sketch_Scream_A("synched",0);
 	this.instance_25.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
 	this.instance_25._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_25).wait(6).to({_off:false},0).to({_off:true},70).wait(50));
+	this.timeline.addTween(cjs.Tween.get(this.instance_25).wait(165).to({_off:false},0).to({_off:true},70).wait(50));
 
-	// Layer_2_copy_copy
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
 	this.instance_26 = new lib.Sketch_Scream_A("synched",0);
 	this.instance_26.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
 	this.instance_26._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_26).wait(4).to({_off:false},0).to({_off:true},70).wait(52));
+	this.timeline.addTween(cjs.Tween.get(this.instance_26).wait(163).to({_off:false},0).to({_off:true},70).wait(52));
 
-	// Layer_2_copy
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
 	this.instance_27 = new lib.Sketch_Scream_A("synched",0);
 	this.instance_27.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
 	this.instance_27._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_27).wait(2).to({_off:false},0).to({_off:true},70).wait(54));
+	this.timeline.addTween(cjs.Tween.get(this.instance_27).wait(161).to({_off:false},0).to({_off:true},70).wait(54));
 
-	// Layer_2
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
 	this.instance_28 = new lib.Sketch_Scream_A("synched",0);
 	this.instance_28.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_28._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_28).to({_off:true},70).wait(56));
+	this.timeline.addTween(cjs.Tween.get(this.instance_28).wait(159).to({_off:false},0).to({_off:true},70).wait(56));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_29 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_29.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_29._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_29).wait(157).to({_off:false},0).to({_off:true},70).wait(58));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_30 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_30.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_30._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_30).wait(155).to({_off:false},0).to({_off:true},70).wait(60));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_31 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_31.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_31._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_31).wait(153).to({_off:false},0).to({_off:true},70).wait(62));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_32 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_32.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_32._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_32).wait(151).to({_off:false},0).to({_off:true},70).wait(64));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_33 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_33.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_33._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_33).wait(149).to({_off:false},0).to({_off:true},70).wait(66));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_34 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_34.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_34._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_34).wait(147).to({_off:false},0).to({_off:true},70).wait(68));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_35 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_35.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_35._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_35).wait(145).to({_off:false},0).to({_off:true},70).wait(70));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_36 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_36.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_36._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_36).wait(143).to({_off:false},0).to({_off:true},70).wait(72));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_37 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_37.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_37._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_37).wait(141).to({_off:false},0).to({_off:true},70).wait(74));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_38 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_38.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_38._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_38).wait(139).to({_off:false},0).to({_off:true},70).wait(76));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_39 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_39.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_39._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_39).wait(137).to({_off:false},0).to({_off:true},70).wait(78));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_40 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_40.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_40._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_40).wait(135).to({_off:false},0).to({_off:true},70).wait(80));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_41 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_41.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_41._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_41).wait(133).to({_off:false},0).to({_off:true},70).wait(82));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_42 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_42.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_42._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_42).wait(131).to({_off:false},0).to({_off:true},70).wait(84));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_43 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_43.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_43._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_43).wait(129).to({_off:false},0).to({_off:true},70).wait(86));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_44 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_44.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_44._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_44).wait(127).to({_off:false},0).to({_off:true},70).wait(88));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_45 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_45.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_45._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_45).wait(125).to({_off:false},0).to({_off:true},70).wait(90));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_46 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_46.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_46._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_46).wait(123).to({_off:false},0).to({_off:true},70).wait(92));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_47 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_47.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_47._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_47).wait(121).to({_off:false},0).to({_off:true},70).wait(94));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy
+	this.instance_48 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_48.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_48._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_48).wait(119).to({_off:false},0).to({_off:true},70).wait(96));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy
+	this.instance_49 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_49.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_49._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_49).wait(117).to({_off:false},0).to({_off:true},70).wait(98));
+
+	// Layer_2_copy_copy_copy_copy_copy
+	this.instance_50 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_50.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_50._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_50).wait(115).to({_off:false},0).to({_off:true},70).wait(100));
+
+	// Layer_2_copy_copy_copy_copy
+	this.instance_51 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_51.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_51._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_51).wait(113).to({_off:false},0).to({_off:true},70).wait(102));
+
+	// Layer_2_copy_copy_copy
+	this.instance_52 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_52.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_52._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_52).wait(111).to({_off:false},0).to({_off:true},70).wait(104));
+
+	// Layer_2_copy_copy
+	this.instance_53 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_53.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_53._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_53).wait(109).to({_off:false},0).to({_off:true},70).wait(106));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_54 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_54.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_54._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_54).wait(108).to({_off:false},0).to({_off:true},70).wait(107));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_55 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_55.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_55._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_55).wait(106).to({_off:false},0).to({_off:true},70).wait(109));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_56 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_56.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_56._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_56).wait(104).to({_off:false},0).to({_off:true},70).wait(111));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_57 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_57.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_57._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_57).wait(102).to({_off:false},0).to({_off:true},70).wait(113));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_58 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_58.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_58._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_58).wait(100).to({_off:false},0).to({_off:true},70).wait(115));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_59 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_59.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_59._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_59).wait(98).to({_off:false},0).to({_off:true},70).wait(117));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_60 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_60.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_60._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_60).wait(96).to({_off:false},0).to({_off:true},70).wait(119));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_61 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_61.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_61._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_61).wait(94).to({_off:false},0).to({_off:true},70).wait(121));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_62 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_62.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_62._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_62).wait(92).to({_off:false},0).to({_off:true},70).wait(123));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_63 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_63.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_63._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_63).wait(90).to({_off:false},0).to({_off:true},70).wait(125));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_64 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_64.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_64._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_64).wait(88).to({_off:false},0).to({_off:true},70).wait(127));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_65 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_65.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_65._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_65).wait(86).to({_off:false},0).to({_off:true},70).wait(129));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_66 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_66.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_66._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_66).wait(84).to({_off:false},0).to({_off:true},70).wait(131));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_67 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_67.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_67._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_67).wait(82).to({_off:false},0).to({_off:true},70).wait(133));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_68 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_68.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_68._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_68).wait(80).to({_off:false},0).to({_off:true},70).wait(135));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_69 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_69.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_69._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_69).wait(78).to({_off:false},0).to({_off:true},70).wait(137));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_70 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_70.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_70._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_70).wait(76).to({_off:false},0).to({_off:true},70).wait(139));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_71 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_71.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_71._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_71).wait(74).to({_off:false},0).to({_off:true},70).wait(141));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_72 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_72.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_72._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_72).wait(72).to({_off:false},0).to({_off:true},70).wait(143));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_73 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_73.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_73._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_73).wait(70).to({_off:false},0).to({_off:true},70).wait(145));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_74 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_74.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_74._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_74).wait(68).to({_off:false},0).to({_off:true},70).wait(147));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_75 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_75.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_75._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_75).wait(66).to({_off:false},0).to({_off:true},70).wait(149));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_76 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_76.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_76._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_76).wait(64).to({_off:false},0).to({_off:true},70).wait(151));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_77 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_77.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_77._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_77).wait(62).to({_off:false},0).to({_off:true},70).wait(153));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_78 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_78.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_78._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_78).wait(60).to({_off:false},0).to({_off:true},70).wait(155));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_79 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_79.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_79._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_79).wait(58).to({_off:false},0).to({_off:true},70).wait(157));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_80 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_80.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_80._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_80).wait(56).to({_off:false},0).to({_off:true},70).wait(159));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_81 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_81.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_81._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_81).wait(54).to({_off:false},0).to({_off:true},70).wait(161));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_82 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_82.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_82._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_82).wait(52).to({_off:false},0).to({_off:true},70).wait(163));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_83 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_83.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_83._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_83).wait(50).to({_off:false},0).to({_off:true},70).wait(165));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_84 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_84.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_84._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_84).wait(48).to({_off:false},0).to({_off:true},70).wait(167));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_85 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_85.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_85._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_85).wait(46).to({_off:false},0).to({_off:true},70).wait(169));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_86 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_86.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_86._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_86).wait(44).to({_off:false},0).to({_off:true},70).wait(171));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_87 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_87.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_87._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_87).wait(42).to({_off:false},0).to({_off:true},70).wait(173));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_88 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_88.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_88._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_88).wait(40).to({_off:false},0).to({_off:true},70).wait(175));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_89 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_89.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_89._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_89).wait(38).to({_off:false},0).to({_off:true},70).wait(177));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_90 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_90.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_90._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_90).wait(36).to({_off:false},0).to({_off:true},70).wait(179));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_91 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_91.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_91._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_91).wait(34).to({_off:false},0).to({_off:true},70).wait(181));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_92 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_92.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_92._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_92).wait(32).to({_off:false},0).to({_off:true},70).wait(183));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_93 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_93.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_93._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_93).wait(30).to({_off:false},0).to({_off:true},70).wait(185));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_94 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_94.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_94._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_94).wait(28).to({_off:false},0).to({_off:true},70).wait(187));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_95 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_95.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_95._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_95).wait(26).to({_off:false},0).to({_off:true},70).wait(189));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_96 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_96.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_96._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_96).wait(24).to({_off:false},0).to({_off:true},70).wait(191));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_97 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_97.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_97._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_97).wait(22).to({_off:false},0).to({_off:true},70).wait(193));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_98 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_98.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_98._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_98).wait(20).to({_off:false},0).to({_off:true},70).wait(195));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_99 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_99.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_99._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_99).wait(18).to({_off:false},0).to({_off:true},70).wait(197));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy_copy
+	this.instance_100 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_100.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_100._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_100).wait(16).to({_off:false},0).to({_off:true},70).wait(199));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy_copy
+	this.instance_101 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_101.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_101._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_101).wait(14).to({_off:false},0).to({_off:true},70).wait(201));
+
+	// Layer_2_copy_copy_copy_copy_copy_copy
+	this.instance_102 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_102.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_102._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_102).wait(12).to({_off:false},0).to({_off:true},70).wait(203));
+
+	// Layer_2_copy_copy_copy_copy_copy
+	this.instance_103 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_103.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_103._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_103).wait(10).to({_off:false},0).to({_off:true},70).wait(205));
+
+	// Layer_2_copy_copy_copy_copy
+	this.instance_104 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_104.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_104._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_104).wait(8).to({_off:false},0).to({_off:true},70).wait(207));
+
+	// Layer_2_copy_copy_copy
+	this.instance_105 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_105.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_105._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_105).wait(6).to({_off:false},0).to({_off:true},70).wait(209));
+
+	// Layer_2_copy_copy
+	this.instance_106 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_106.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_106._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_106).wait(4).to({_off:false},0).to({_off:true},70).wait(211));
+
+	// Layer_2_copy
+	this.instance_107 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_107.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+	this.instance_107._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_107).wait(2).to({_off:false},0).to({_off:true},70).wait(213));
+
+	// Layer_2
+	this.instance_108 = new lib.Sketch_Scream_A("synched",0);
+	this.instance_108.setTransform(-0.1,0.15,1.1754,1.1754,0,0,0,31.6,33.2);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_108).to({_off:true},70).wait(215));
 
 	this._renderFirstFrame();
 
@@ -1080,24 +1640,24 @@ if (reversed == null) { reversed = false; }
 
 	// Layer_3
 	this.instance = new lib.Sketch_Fall_Through_Sky_Cloud_Front();
-	this.instance.setTransform(139.6,1011.85,1,1,0,0,0,390.6,111.8);
+	this.instance.setTransform(379.1,1278.45,1,1,0,0,0,390.6,111.8);
 
 	this.shape = new cjs.Shape();
 	this.shape.graphics.f("#FFFFFF").s().p("AgCgCIAFAEIAAABg");
-	this.shape.setTransform(337.725,1130.6625);
+	this.shape.setTransform(577.225,1397.275);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape},{t:this.instance}]}).wait(1));
 
 	// Layer_6 (mask)
 	var mask = new cjs.Shape();
 	mask._off = true;
-	mask.graphics.p("Eg+oCAYMAAAkAvMB9SAAAMAAAEAvg");
-	mask.setTransform(162.8,822.575);
+	mask.graphics.p("Eg+iCUPMAAAj+oMB9SAAAMAAAD+og");
+	mask.setTransform(401.625,948.6613);
 
 	// scream
 	this.scream_text = new lib.Sketch_Fall_Through_Sky_Text();
 	this.scream_text.name = "scream_text";
-	this.scream_text.setTransform(244.75,11.1);
+	this.scream_text.setTransform(484.25,277.7);
 
 	var maskedShapeInstanceList = [this.scream_text];
 
@@ -1110,7 +1670,7 @@ if (reversed == null) { reversed = false; }
 	// character
 	this.character = new lib.Sketch_Fall_Through_Sky_Character();
 	this.character.name = "character";
-	this.character.setTransform(275.2,70.75,1,1,0,0,0,111.5,58.9);
+	this.character.setTransform(514.7,337.35,1,1,0,0,0,111.5,58.9);
 
 	var maskedShapeInstanceList = [this.character];
 
@@ -1123,27 +1683,27 @@ if (reversed == null) { reversed = false; }
 	// hole_line
 	this.shape_1 = new cjs.Shape();
 	this.shape_1.graphics.f("#000000").s().p("AR+BtQgWgBgGgIQgDgEADgFQACgDAEgCMghRgABIgDABQgHABgLgCQgWgEgfgMQgegLgfgNIgBABQgMABgOgEQgJgCgOgHQhSglheggIiXgxQgRgFgBgFQgEgDABgEQABgDAFgCIAKgCQAJgBAMADIAAAAIAGACMAu3AABIADgBQAHgCAHADIADAAIAHAEIAAAEIgCAEIgBABQgDAFgJAEIgCABQAGAEgCAFQgDAGgYAFQgkAHggAMQgWAMgXAOIhJArIgaAZQgLALgJAHIAIAAIg3AbIgKADQgZAIgZAAIgGAAgA24hZQAEADANADQAXAFA1ARIBXAbICXA8QBSAhAtANIABABIAIgCIAAgBMAiIAABQAXgGAXgKQgGgCgBgDQgDgGATgIQAegMASgKQASgJBCgnQAygfAngPIATgHIACgBMguFgABIABAAg");
-	this.shape_1.setTransform(153.49,10.9017);
+	this.shape_1.setTransform(392.99,277.5017);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape_1).wait(1));
 
 	// hole_fill
 	this.shape_2 = new cjs.Shape();
-	this.shape_2.graphics.lf(["#2E2E2E","#BEBEBE"],[0,1],0,-11.7,0,11.8).s().p("Av3BRQgtgNhSghIiXg9IhXgbQg1gQgYgFQgMgDgEgDIgBgBMAuFAABIgCACIgTAHQgoAPgxAeQhCAogSAJQgSAKgfAMQgSAIACAGQACADAGACQgXAJgXAHMgiJgABIAAABIgHABIgBAAg");
-	this.shape_2.setTransform(154.4,10.05);
+	this.shape_2.graphics.lf(["#2E2E2E","#BEBEBE"],[0,1],0,-11.7,0,11.8).s().p("Av3BRQgtgNhSghIiXg9IhXgbQg1gQgYgFQgMgDgEgDIgBgBMAuFAABIgCACIgTAHQgoAOgxAfQhCAogSAJQgTAKgeAMQgSAHACAHQACADAFACQgXAJgXAHMgiIgABIAAABIgHABIgBAAg");
+	this.shape_2.setTransform(393.9,276.65);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape_2).wait(1));
 
 	// sky
 	this.shape_3 = new cjs.Shape();
-	this.shape_3.graphics.f("#5CBDE7").s().p("Eg+yCUPMAAAkocMB9kAAAMAAAEocg");
-	this.shape_3.setTransform(162.3,682.05);
+	this.shape_3.graphics.f("#5CBDE7").s().p("Eg+yCUOMAAAkocMB9kAAAMAAAEocg");
+	this.shape_3.setTransform(401.8,948.65);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape_3).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.Sketch_Fall_Through_Sky, new cjs.Rectangle(-280.4,-266.6,844.6,1897.3000000000002), null);
+}).prototype = getMCSymbolPrototype(lib.Sketch_Fall_Through_Sky, new cjs.Rectangle(-40.9,0,844.6,1897.3), null);
 
 
 (lib.Sketch_Fall_On_Bed = function(mode,startPosition,loop,reversed) {
@@ -1183,7 +1743,7 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({regX:123.5,regY:334.2,rotation:0.0133,x:26.35,y:330.9},0).wait(1).to({rotation:0.0556,x:26.6},0).wait(1).to({rotation:0.1262,x:26.85,y:330.95},0).wait(1).to({rotation:0.225,x:27.3,y:331.05},0).wait(1).to({rotation:0.3511,x:27.85,y:331.1},0).wait(1).to({rotation:0.5064,x:28.55,y:331.2},0).wait(1).to({rotation:0.689,x:29.35,y:331.3},0).wait(1).to({rotation:0.8998,x:30.3,y:331.45},0).wait(1).to({rotation:1.1389,x:31.35,y:331.65},0).wait(1).to({rotation:1.4062,x:32.45,y:331.85},0).wait(1).to({rotation:1.7017,x:33.8,y:332},0).wait(1).to({rotation:2.0254,x:35.15,y:332.3},0).wait(1).to({rotation:2.3774,x:36.75,y:332.5},0).wait(1).to({rotation:2.7576,x:38.4,y:332.85},0).wait(1).to({rotation:3.1652,x:40.15,y:333.2},0).wait(1).to({rotation:3.601,x:42,y:333.6},0).wait(1).to({rotation:4.0658,x:44.05,y:334},0).wait(1).to({rotation:4.5581,x:46.2,y:334.5},0).wait(1).to({rotation:5.0786,x:48.4,y:335},0).wait(1).to({rotation:5.6273,x:50.8,y:335.55},0).wait(1).to({rotation:6.2042,x:53.3,y:336.2},0).wait(1).to({rotation:6.8093,x:55.9,y:336.85},0).wait(1).to({rotation:7.4427,x:58.55,y:337.6},0).wait(1).to({rotation:8.1035,x:61.4,y:338.35},0).wait(1).to({rotation:8.7933,x:64.3,y:339.25},0).wait(1).to({rotation:9.5105,x:67.35,y:340.15},0).wait(1).to({rotation:10.2559,x:70.5,y:341.2},0).wait(1).to({rotation:11.0304,x:73.7,y:342.3},0).wait(1).to({rotation:11.8323,x:77.05,y:343.45},0).wait(1).to({rotation:12.6624,x:80.5,y:344.7},0).wait(1).to({rotation:13.5207,x:84.05,y:346.1},0).wait(1).to({rotation:14.4064,x:87.65,y:347.6},0).wait(1).to({rotation:15.3212,x:91.4,y:349.15},0).wait(1).to({rotation:16.2642,x:95.25,y:350.85},0).wait(1).to({rotation:17.2346,x:99.15,y:352.65},0).wait(1).to({rotation:18.234,x:103.15,y:354.55},0).wait(1).to({rotation:19.2608,x:107.2,y:356.6},0).wait(1).to({rotation:20.3159,x:111.3,y:358.75},0).wait(1).to({rotation:21.3992,x:115.55,y:361.05},0).wait(1).to({rotation:22.5107,x:119.8,y:363.55},0).wait(1).to({rotation:23.6504,x:124.15,y:366.15},0).wait(1).to({rotation:24.8184,x:128.45,y:368.9},0).wait(1).to({rotation:26.0137,x:132.95,y:371.8},0).wait(1).to({rotation:27.2381,x:137.35,y:374.9},0).wait(1).to({rotation:28.4908,x:141.9,y:378.15},0).wait(1).to({rotation:29.7708,x:146.35,y:381.55},0).wait(1).to({rotation:31.079,x:150.9,y:385.15},0).wait(1).to({rotation:32.4155,x:155.45,y:388.95},0).wait(1).to({rotation:33.7802,x:160.05,y:392.95},0).wait(1).to({rotation:35.1731,x:164.6,y:397.15},0).wait(1).to({rotation:36.5942,x:169.1,y:401.4},0).wait(1).to({rotation:38.0436,x:173.6,y:406.05},0).wait(1).to({rotation:39.5211,x:178.1,y:410.8},0).wait(1).to({rotation:41.0261,x:182.55,y:415.75},0).wait(1).to({rotation:42.5601,x:186.9,y:421},0).wait(1).to({rotation:44.1216,x:191.25,y:426.4},0).wait(1).to({rotation:45.7112,x:195.5,y:431.95},0).wait(1).to({rotation:47.3291,x:199.65,y:437.8},0).wait(1).to({rotation:48.976,x:203.65,y:443.85},0).wait(1));
 
 	// Layer_3
-	this.instance_1 = new lib.CachedBmp_8();
+	this.instance_1 = new lib.CachedBmp_9();
 	this.instance_1.setTransform(-102.3,12.9,0.5,0.5);
 
 	var maskedShapeInstanceList = [this.instance_1];
@@ -1227,7 +1787,7 @@ if (reversed == null) { reversed = false; }
 	// Layer_9
 	this.fall_through_sky = new lib.Sketch_Fall_Through_Sky();
 	this.fall_through_sky.name = "fall_through_sky";
-	this.fall_through_sky.setTransform(391.95,8672.8,1,1,0,0,0,153.5,10.9);
+	this.fall_through_sky.setTransform(149.95,8562.8,1,1,0,0,0,153.5,10.9);
 
 	this.timeline.addTween(cjs.Tween.get(this.fall_through_sky).wait(1));
 
@@ -1329,15 +1889,15 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Art363a_Final_atlas_1.png?1647129696000", id:"Art363a_Final_atlas_1"},
-		{src:"images/Art363a_Final_atlas_2.png?1647129696000", id:"Art363a_Final_atlas_2"},
-		{src:"images/Art363a_Final_atlas_3.png?1647129696000", id:"Art363a_Final_atlas_3"},
-		{src:"images/Art363a_Final_atlas_4.png?1647129696000", id:"Art363a_Final_atlas_4"},
-		{src:"images/Art363a_Final_atlas_5.png?1647129696000", id:"Art363a_Final_atlas_5"},
-		{src:"images/Art363a_Final_atlas_6.png?1647129696000", id:"Art363a_Final_atlas_6"},
-		{src:"images/Art363a_Final_atlas_7.png?1647129696000", id:"Art363a_Final_atlas_7"},
-		{src:"images/Art363a_Final_atlas_8.png?1647129696000", id:"Art363a_Final_atlas_8"},
-		{src:"images/Art363a_Final_atlas_9.png?1647129696000", id:"Art363a_Final_atlas_9"}
+		{src:"images/Art363a_Final_atlas_1.png?1647306104535", id:"Art363a_Final_atlas_1"},
+		{src:"images/Art363a_Final_atlas_2.png?1647306104535", id:"Art363a_Final_atlas_2"},
+		{src:"images/Art363a_Final_atlas_3.png?1647306104535", id:"Art363a_Final_atlas_3"},
+		{src:"images/Art363a_Final_atlas_4.png?1647306104535", id:"Art363a_Final_atlas_4"},
+		{src:"images/Art363a_Final_atlas_5.png?1647306104535", id:"Art363a_Final_atlas_5"},
+		{src:"images/Art363a_Final_atlas_6.png?1647306104535", id:"Art363a_Final_atlas_6"},
+		{src:"images/Art363a_Final_atlas_7.png?1647306104535", id:"Art363a_Final_atlas_7"},
+		{src:"images/Art363a_Final_atlas_8.png?1647306104535", id:"Art363a_Final_atlas_8"},
+		{src:"images/Art363a_Final_atlas_9.png?1647306104535", id:"Art363a_Final_atlas_9"}
 	],
 	preloads: []
 };
