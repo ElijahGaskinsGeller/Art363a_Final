@@ -35,8 +35,21 @@ function page_init(lib) {
     let sinkIntoBed = page.sinking_into_bed;
     let fallThroughSky = page.fall_through_sky;
 
-    document.getElementsByClassName("container")[0].style.height = page.nominalBounds.height+"px";
 
+    // document.getElementsByClassName("container")[0].style.height = page.nominalBounds.height+"px";
+    document.head.insertAdjacentHTML("beforeend", `<style>.container{ height: `+page.nominalBounds.height+`px !important;}</style>`)
+    // let style = document.createElement("style");
+    // let head = document.head ||document.getElementsByTagName("head")[0];
+    // let css = "#animation_container{height: "+page.nominalBounds.height+"px;}";
+
+    // head.appendChild(style);
+    // style.type =
+    // if (style.styleSheet){
+    //     This is required for IE8 and below.
+        // style.styleSheet.cssText = css;
+    // } else {
+    //     style.appendChild(document.createTextNode(css));
+    // }
     console.log(blinds);
 
 
@@ -62,7 +75,7 @@ function page_init(lib) {
 
         stage.scaleY = canvas.clientWidth / canvas.clientHeight * window.devicePixelRatio * stageRatio;
 
-        document.getElementsByClassName("container")[0].style.height = page.nominalBounds.height+"px";
+        // document.getElementsByClassName("container")[0].style.height = page.nominalBounds.height+"px";
         scrollEnd = calcScrollEnd();
         onScroll(null);
     }
