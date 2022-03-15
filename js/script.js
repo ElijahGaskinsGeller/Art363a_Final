@@ -35,6 +35,8 @@ function page_init(lib) {
     let sinkIntoBed = page.sinking_into_bed;
     let fallThroughSky = page.fall_through_sky;
 
+    document.getElementsByClassName("container")[0].style.height = page.nominalBounds.height+"px";
+
     console.log(blinds);
 
 
@@ -60,6 +62,7 @@ function page_init(lib) {
 
         stage.scaleY = canvas.clientWidth / canvas.clientHeight * window.devicePixelRatio * stageRatio;
 
+        document.getElementsByClassName("container")[0].style.height = page.nominalBounds.height+"px";
         scrollEnd = calcScrollEnd();
         onScroll(null);
     }
