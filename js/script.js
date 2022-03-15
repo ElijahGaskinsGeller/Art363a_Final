@@ -36,36 +36,19 @@ function page_init(lib) {
     let fallThroughSky = page.fall_through_sky;
 
 
-    // document.getElementsByClassName("container")[0].style.height = page.nominalBounds.height+"px";
     document.head.insertAdjacentHTML("beforeend", `<style>.container{ height: `+page.nominalBounds.height+`px !important;}</style>`)
-    // let style = document.createElement("style");
-    // let head = document.head ||document.getElementsByTagName("head")[0];
-    // let css = "#animation_container{height: "+page.nominalBounds.height+"px;}";
 
-    // head.appendChild(style);
-    // style.type =
-    // if (style.styleSheet){
-    //     This is required for IE8 and below.
-        // style.styleSheet.cssText = css;
-    // } else {
-    //     style.appendChild(document.createTextNode(css));
-    // }
+
     console.log(blinds);
 
 
     function calcScrollEnd() {
-        // return dots.y - dots.nominalBounds.height - padding;
-        // console.log(canvas.clientHeight);
-        // console.log(window.innerHeight);
         return scrollStart - (page.nominalBounds.height) + (canvas.clientHeight) - (2 * padding);
-        // return -(page.nominalBounds.height);
-        // return scrollStart - (dots.nominalBounds.height) + (canvas.clientHeight );
     }
 
     let padding = 0;
 
     let scrollStart = page.y + padding;
-    // let scrollStart = dots.y;
     let scrollEnd = calcScrollEnd();
 
 
@@ -75,7 +58,6 @@ function page_init(lib) {
 
         stage.scaleY = canvas.clientWidth / canvas.clientHeight * window.devicePixelRatio * stageRatio;
 
-        // document.getElementsByClassName("container")[0].style.height = page.nominalBounds.height+"px";
         scrollEnd = calcScrollEnd();
         onScroll(null);
     }
@@ -99,18 +81,11 @@ function page_init(lib) {
 
         page.y = lerp(scrollStart, scrollEnd, currentScroll);
 
-        // let fallThroughSkyScroll = RectNormalPositionOnScreen(fallThroughSky.localToGlobal(0, 0).y-canvas.clientHeight, fallThroughSky.nominalBounds.height, canvas.clientHeight);
+
         let fallThroughSkyScroll = RectNormalPositionOnScreen(page.y + fallThroughSky.y , fallThroughSky.nominalBounds.height, canvas.clientHeight);
         console.log("fall through sky scroll: " + fallThroughSkyScroll);
-        // console.log("page: " + page.y);
-        // console.log("fall through sky: " + fallThroughSky.y);
-        // console.log("character: " + fallThroughSky.character.y);
-        // console.log("canvas height: " + canvas.clientHeight);
-        // console.log("fall through sky global: "+fallThroughSky.localToGlobal(0,0).y);
-        // console.log(fallThroughSky.nominalBounds);
 
         if (fallThroughSkyScroll >= 0 && fallThroughSkyScroll <= 1) {
-            // fallThroughSky.character.y = fallThroughSky.globalToLocal(0,canvas.clientHeight/2).y - 25;
             fallThroughSky.character.y = Math.abs(page.y) - fallThroughSky.y + (canvas.clientHeight / 2) + (fallThroughSky.character.nominalBounds.height / 2);
             fallThroughSky.scream_text.y = fallThroughSky.character.y - 50;
 
@@ -118,18 +93,11 @@ function page_init(lib) {
             let fallThroughSkyCurrentFrame = Math.abs(clamp(fallThroughSkyScroll * fallThroughSky.character.totalFrames - 1, 0, fallThroughSky.character.totalFrames - 1));
             fallThroughSky.character.gotoAndStop(fallThroughSkyCurrentFrame);
 
-            // let screamTextScroll = RectNormalPositionOnScreen(fallThroughSky.localToGlobal(0, 0).y + 500, fallThroughSky.nominalBounds.height, canvas.clientHeight);
             let screamTextScroll = RectNormalPositionOnScreen(page.y + fallThroughSky.y +500, fallThroughSky.nominalBounds.height, canvas.clientHeight);
             let screamTextCurrentFrame = Math.abs(clamp(screamTextScroll * fallThroughSky.scream_text.totalFrames - 1, 0, fallThroughSky.scream_text.totalFrames - 1));
             fallThroughSky.scream_text.gotoAndStop(screamTextCurrentFrame);
         }
 
-        // console.log("start: " + scrollStart);
-        // console.log("current: " + page.y);
-        // console.log("end: " + scrollEnd);
-        // console.log("height: " + page.nominalBounds.height);
-        // console.log("canvas h: " + canvas.clientHeight);
-        // console.log("canvas w: " + canvas.clientWidth);
 
 
     }
