@@ -43,8 +43,8 @@ function page_init(lib) {
     let cloudTransitionBackPos = cloudTransitionBack.y;
 
     let fallTowardsCamera = page.fall_towards_camera;
-    console.log(fallTowardsCamera.character);
-    fallTowardsCamera.character.scaleX = fallTowardsCamera.character.scaleY = .5;
+    let fallTowardsCameraCharacterY = fallTowardsCamera.character.y;
+    // console.log(fallTowardsCamera.character);
 
 
     document.head.insertAdjacentHTML("beforeend", `<style>.container{ height: `+page.nominalBounds.height+`px !important;}</style>`)
@@ -119,6 +119,16 @@ function page_init(lib) {
         }
 
 
+        let fallTowardsCameraScroll = RectNormalPositionOnScreen(fallTowardsCamera.localToGlobal(0, 0).y + 250, fallTowardsCamera.nominalBounds.height - 750, canvas.clientHeight);
+        let fallTowardsCameraCurrentFrame = Math.abs(clamp(fallTowardsCameraScroll * fallTowardsCamera.totalFrames - 1, 0, fallTowardsCamera.totalFrames - 1));
+        fallTowardsCamera.gotoAndStop(fallTowardsCameraCurrentFrame);
+        // fallTowardsCamera.character.scaleX = fallTowardsCamera.character.scaleY = clamp(1.5 - (fallTowardsCameraScroll*1.5), 0, 2);
+
+        // fallTowardsCamera.character.y = fallTowardsCameraCharacterY - fallTowardsCameraScroll*100;
+
+        // let fallTowardsCameraCloudScroll = RectNormalPositionOnScreen(fallTowardsCamera.localToGlobal(0, 0).y, fallTowardsCamera.nominalBounds.height, canvas.clientHeight);
+        // fallTowardsCamera.clouds.alpha = 1 - (fallTowardsCameraCloudScroll);
+        // fallTowardsCamera.alpha =  1.5 - (fallTowardsCameraScroll);
 
     }
 
