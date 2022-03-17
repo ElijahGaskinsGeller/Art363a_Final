@@ -34,12 +34,22 @@ function page_init(lib) {
     let fallOnBed = page.fall_on_bed;
     let sinkIntoBed = page.sinking_into_bed;
     let fallThroughSky = page.fall_through_sky;
+    let fallThroughSkyClouds = [fallThroughSky.cloud_front ,fallThroughSky.cloud_0, fallThroughSky.cloud_1, fallThroughSky.cloud_2];
+    let fallThroughSkyCloudPositions = [fallThroughSkyClouds[0].y,fallThroughSkyClouds[1].y,fallThroughSkyClouds[2].y, fallThroughSkyClouds[3].y];
+    let cloudTransitionFront = fallThroughSky.cloud_transition_front;
+    let cloudTransitionFrontPos = cloudTransitionFront.y;
+
+    let cloudTransitionBack = fallThroughSky.cloud_transition_back;
+    let cloudTransitionBackPos = cloudTransitionBack.y;
+
+    let fallTowardsCamera = page.fall_towards_camera;
+    console.log(fallTowardsCamera.character);
+    fallTowardsCamera.character.scaleX = fallTowardsCamera.character.scaleY = .5;
 
 
     document.head.insertAdjacentHTML("beforeend", `<style>.container{ height: `+page.nominalBounds.height+`px !important;}</style>`)
 
 
-    console.log(blinds);
 
 
     function calcScrollEnd() {
@@ -83,7 +93,7 @@ function page_init(lib) {
 
 
         let fallThroughSkyScroll = RectNormalPositionOnScreen(page.y + fallThroughSky.y , fallThroughSky.nominalBounds.height, canvas.clientHeight);
-        console.log("fall through sky scroll: " + fallThroughSkyScroll);
+
 
         if (fallThroughSkyScroll >= 0 && fallThroughSkyScroll <= 1) {
             fallThroughSky.character.y = Math.abs(page.y) - fallThroughSky.y + (canvas.clientHeight / 2) + (fallThroughSky.character.nominalBounds.height / 2);
@@ -96,6 +106,16 @@ function page_init(lib) {
             let screamTextScroll = RectNormalPositionOnScreen(page.y + fallThroughSky.y +500, fallThroughSky.nominalBounds.height, canvas.clientHeight);
             let screamTextCurrentFrame = Math.abs(clamp(screamTextScroll * fallThroughSky.scream_text.totalFrames - 1, 0, fallThroughSky.scream_text.totalFrames - 1));
             fallThroughSky.scream_text.gotoAndStop(screamTextCurrentFrame);
+
+            fallThroughSkyClouds[0].y = fallThroughSkyCloudPositions[0] + (-600*fallThroughSkyScroll);
+            fallThroughSkyClouds[1].y = fallThroughSkyCloudPositions[1] + (-200*fallThroughSkyScroll);
+            fallThroughSkyClouds[2].y = fallThroughSkyCloudPositions[2] + (0*fallThroughSkyScroll);
+            fallThroughSkyClouds[3].y = fallThroughSkyCloudPositions[3] + (100*fallThroughSkyScroll);
+
+            let cloudTransitionScroll = RectNormalPositionOnScreen(page.y + fallThroughSky.y + 1500 , fallThroughSky.nominalBounds.height, canvas.clientHeight);
+            cloudTransitionFront.y = cloudTransitionFrontPos + (-400*cloudTransitionScroll);
+            cloudTransitionBack.y = cloudTransitionBackPos + (100*cloudTransitionScroll);
+
         }
 
 
