@@ -46,6 +46,10 @@ function page_init(lib) {
     let fallTowardsCameraCharacterY = fallTowardsCamera.character.y;
     // console.log(fallTowardsCamera.character);
 
+    let endLand = page.end_land;
+    console.log(endLand);
+    endLand.room.alpha = 0;
+
 
     document.head.insertAdjacentHTML("beforeend", `<style>.container{ height: `+page.nominalBounds.height+`px !important;}</style>`)
 
@@ -130,6 +134,13 @@ function page_init(lib) {
         // fallTowardsCamera.clouds.alpha = 1 - (fallTowardsCameraCloudScroll);
         // fallTowardsCamera.alpha =  1.5 - (fallTowardsCameraScroll);
 
+        if(WindowScrollNormalPosition() >= .99){
+            endLand.room.alpha = 1;
+            endLand.land.alpha = 0;
+        }else{
+            endLand.room.alpha = 0;
+            endLand.land.alpha = 1;
+        }
     }
 
     onResize(null);
