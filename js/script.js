@@ -16,6 +16,10 @@ function clamp(num, min, max) {
     return Math.min(Math.max(num, min), max);
 }
 
+function AddOnFrameEvent(object, frame, func){
+    object.timeline.addTween(createjs.Tween.get(object).wait(frame).call(func).wait(1));
+}
+
 function RectNormalPositionOnScreen(rectY, rectHeight, screenHeight) {
     let start = screenHeight;
     let end = -rectHeight;
@@ -57,14 +61,44 @@ function page_init(lib) {
     fallThroughSky.cloud_2.bird_fly_in.alpha = 0;
     fallThroughSky.cloud_2.bird_fly_in.gotoAndStop(0);
 
+    let birdFar = false;
+    let birdFlying = false;
+
     console.log("create js");
     console.log(createjs);
 
-    console.log(fallThroughSky.cloud_2.bird_fly_away);
-    let frameNumber = "frame_"+fallThroughSky.cloud_2.bird_fly_away.totalFrames;
-    fallThroughSky.cloud_2.bird_fly_away.frame_1 = function() {
-        console.log("on frame event");
-    }
+
+    let closeBirdFlyIn = cloudTransitionFront.bird_fly_in;
+    let closeBirdFlyAway = cloudTransitionFront.bird_fly_away;
+
+    let farBirdFlyIn = fallThroughSky.cloud_2.bird_fly_in;
+    let farBirdFlyAway = fallThroughSky.cloud_2.bird_fly_away;
+
+    AddOnFrameEvent(closeBirdFlyAway, closeBirdFlyAway.totalFrames - 1, function(){
+        setTimeout(function (){
+            farBirdFlyIn.alpha = 1;
+            farBirdFlyIn.gotoAndPlay(1);
+        },200);
+    });
+
+    AddOnFrameEvent(farBirdFlyIn, farBirdFlyIn.totalFrames - 1, function(){
+        birdFlying = false;
+        birdFar = true;
+    });
+
+    AddOnFrameEvent(farBirdFlyAway, farBirdFlyAway.totalFrames - 1, function(){
+        // birdFlying = true;
+        setTimeout(function (){
+            closeBirdFlyIn.alpha = 1;
+            closeBirdFlyIn.gotoAndPlay(1);
+        },200);
+    });
+
+    AddOnFrameEvent(closeBirdFlyIn, closeBirdFlyIn.totalFrames - 1, function(){
+        birdFlying = false;
+        birdFar = false;
+    });
+
 
     let fallTowardsCamera = page.fall_towards_camera;
     let fallTowardsCameraCharacterY = fallTowardsCamera.character.y;
@@ -74,8 +108,6 @@ function page_init(lib) {
     console.log(endLand);
     endLand.room.alpha = 0;
 
-    let birdFly = false;
-    let birdFlying = false;
 
 
     document.head.insertAdjacentHTML("beforeend", `<style>.container{ height: ` + page.nominalBounds.height + `px !important;}</style>`)
@@ -145,43 +177,24 @@ function page_init(lib) {
             cloudTransitionFront.y = cloudTransitionFrontPos + (-400 * cloudTransitionScroll);
             cloudTransitionBack.y = cloudTransitionBackPos + (100 * cloudTransitionScroll);
 
-            if (!birdFly && !birdFlying &&
-                (cloudTransitionFront.bird_fly_away.currentFrame <= 0 || fallThroughSky.cloud_2.bird_fly_away.currentFrame >= fallThroughSky.cloud_2.bird_fly_away.totalFrames - 1 ) &&
-                cloudTransitionFront.bird_fly_in.currentFrame >= cloudTransitionFront.bird_fly_in.totalFrames - 1 &&
+
+            if (!birdFar && !birdFlying &&
                 fallThroughSkyScroll > .5) {
 
-                cloudTransitionFront.bird_fly_away.gotoAndPlay(0);
+                cloudTransitionFront.bird_fly_away.gotoAndPlay(1);
                 cloudTransitionFront.bird_fly_away.alpha = 1;
                 cloudTransitionFront.bird_fly_in.alpha = 0;
 
-                birdFly = true;
                 birdFlying = true;
-
-                setTimeout(function () {
-                    birdFlying = false;
-                    fallThroughSky.cloud_2.bird_fly_in.alpha = 1;
-                    fallThroughSky.cloud_2.bird_fly_in.gotoAndPlay(0);
-                }, 1000);
-            } else if (birdFly && !birdFlying &&
-                       fallThroughSky.cloud_2.bird_fly_in.currentFrame >= fallThroughSky.cloud_2.bird_fly_in.totalFrames - 1 &&
-                       fallThroughSkyScroll < .35) {
+            } else if (birdFar && !birdFlying &&
+                fallThroughSkyScroll < .35) {
 
                 fallThroughSky.cloud_2.bird_fly_in.alpha = 0;
 
-                fallThroughSky.cloud_2.bird_fly_away.gotoAndPlay(0);
+                fallThroughSky.cloud_2.bird_fly_away.gotoAndPlay(1);
                 fallThroughSky.cloud_2.bird_fly_away.alpha = 1;
-
                 birdFlying = true;
-                birdFly = false;
-
-                setTimeout(function () {
-                    birdFlying = false;
-                    cloudTransitionFront.bird_fly_in.alpha = 1;
-                    cloudTransitionFront.bird_fly_away.alpha = 0;
-                    cloudTransitionFront.bird_fly_in.gotoAndPlay(0);
-                }, 2500);
             }
-
         }
 
 

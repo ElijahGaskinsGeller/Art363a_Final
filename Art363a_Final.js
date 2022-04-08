@@ -1699,17 +1699,6 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
-	console.log("here");
-	// timeline functions:
-	this.frame_58 = function() {
-		console.log("this work?")
-	}
-	console.log(this);
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(58).call(this.frame_58).wait(1));
-	this.timeline.addTween(cjs.Tween.get(this).wait(1).call(this.frame_1).wait(1));
-
 	// Layer_1
 	this.instance = new lib.Sketch_Bird_Flying();
 	this.instance.setTransform(33.9,30.75,1,1,0,0,180,52.8,23.6);
@@ -1732,14 +1721,6 @@ if (reversed == null) { reversed = false; }
 	props.loop = loop;
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
-
-	// timeline functions:
-	this.frame_21 = function() {
-		console.log("this is a test")
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(21).call(this.frame_21).wait(1));
 
 	// Layer_1
 	this.shape = new cjs.Shape();
@@ -1959,7 +1940,7 @@ if (reversed == null) { reversed = false; }
 
 	// Bounds
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#000000").ss(1,1,1).p("Eg+hLWGMAAAJKSEA+i0gPMAAAf//Eg+eMFCMAAA///");
+	this.shape.graphics.f().s("#000000").ss(1,1,1).p("Eg+eMFCMAAA///EA+i0gPMAAAf//Eg+hLWGMAAAJKS");
 	this.shape.setTransform(399.85,8399.325);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
@@ -2089,19 +2070,19 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/CachedBmp_6.png?1649351783099", id:"CachedBmp_6"},
-		{src:"images/storyboardadditions_fall.png?1649351783099", id:"storyboardadditions_fall"},
-		{src:"images/Art363a_Final_atlas_1.png?1649351783015", id:"Art363a_Final_atlas_1"},
-		{src:"images/Art363a_Final_atlas_2.png?1649351783015", id:"Art363a_Final_atlas_2"},
-		{src:"images/Art363a_Final_atlas_3.png?1649351783015", id:"Art363a_Final_atlas_3"},
-		{src:"images/Art363a_Final_atlas_4.png?1649351783015", id:"Art363a_Final_atlas_4"},
-		{src:"images/Art363a_Final_atlas_5.png?1649351783015", id:"Art363a_Final_atlas_5"},
-		{src:"images/Art363a_Final_atlas_6.png?1649351783015", id:"Art363a_Final_atlas_6"},
-		{src:"images/Art363a_Final_atlas_7.png?1649351783015", id:"Art363a_Final_atlas_7"},
-		{src:"images/Art363a_Final_atlas_8.png?1649351783015", id:"Art363a_Final_atlas_8"},
-		{src:"images/Art363a_Final_atlas_9.png?1649351783015", id:"Art363a_Final_atlas_9"},
-		{src:"images/Art363a_Final_atlas_10.png?1649351783015", id:"Art363a_Final_atlas_10"},
-		{src:"images/Art363a_Final_atlas_11.png?1649351783015", id:"Art363a_Final_atlas_11"}
+		{src:"images/CachedBmp_6.png?1649457051055", id:"CachedBmp_6"},
+		{src:"images/storyboardadditions_fall.png?1649457051055", id:"storyboardadditions_fall"},
+		{src:"images/Art363a_Final_atlas_1.png?1649457050979", id:"Art363a_Final_atlas_1"},
+		{src:"images/Art363a_Final_atlas_2.png?1649457050980", id:"Art363a_Final_atlas_2"},
+		{src:"images/Art363a_Final_atlas_3.png?1649457050980", id:"Art363a_Final_atlas_3"},
+		{src:"images/Art363a_Final_atlas_4.png?1649457050980", id:"Art363a_Final_atlas_4"},
+		{src:"images/Art363a_Final_atlas_5.png?1649457050980", id:"Art363a_Final_atlas_5"},
+		{src:"images/Art363a_Final_atlas_6.png?1649457050980", id:"Art363a_Final_atlas_6"},
+		{src:"images/Art363a_Final_atlas_7.png?1649457050980", id:"Art363a_Final_atlas_7"},
+		{src:"images/Art363a_Final_atlas_8.png?1649457050980", id:"Art363a_Final_atlas_8"},
+		{src:"images/Art363a_Final_atlas_9.png?1649457050980", id:"Art363a_Final_atlas_9"},
+		{src:"images/Art363a_Final_atlas_10.png?1649457050980", id:"Art363a_Final_atlas_10"},
+		{src:"images/Art363a_Final_atlas_11.png?1649457050980", id:"Art363a_Final_atlas_11"}
 	],
 	preloads: []
 };
