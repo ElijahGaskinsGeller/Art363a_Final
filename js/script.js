@@ -31,6 +31,13 @@ function RectNormalPositionOnScreen(rectY, rectHeight, screenHeight) {
 
 }
 
+function rectContainsPoint(rX, rY, rW, rH, pX, pY){
+
+    return (pX >= rX && pX <= rX + rW) &&
+           (pY >= rY && pY <= rY + rH);
+
+}
+
 function page_init(lib) {
     let _this = stage.children[0];
     let page = _this.page;
@@ -73,6 +80,9 @@ function page_init(lib) {
 
     let farBirdFlyIn = fallThroughSky.cloud_2.bird_fly_in;
     let farBirdFlyAway = fallThroughSky.cloud_2.bird_fly_away;
+
+    let fallToLand = page.fallToLand;
+    console.log(fallToLand);
 
     AddOnFrameEvent(closeBirdFlyAway, closeBirdFlyAway.totalFrames - 1, function(){
         setTimeout(function (){
@@ -208,6 +218,27 @@ function page_init(lib) {
         } else {
             endLand.room.alpha = 0;
             endLand.land.alpha = 1;
+        }
+
+        let fallToLandScroll = RectNormalPositionOnScreen(page.y + fallToLand.y, fallToLand.nominalBounds.height, canvas.clientHeight);
+        if(fallToLandScroll >= 0 && fallToLandScroll <= 1){
+            fallToLand.character.y = Math.abs(page.y) - fallToLand.y + (canvas.clientHeight / 2) + (fallToLand.character.nominalBounds.height / 2);
+
+            console.log("nom bounds");
+            console.log(fallToLand.character.nominalBounds);
+
+
+
+            console.log("point");
+            console.log(fallToLand.point.x + " " + fallToLand.point.y);
+
+            // if(fallToLand.character.nominalBounds.contains(fallToLand.point.x, fallToLand.point.y, 1, 1)){
+            if(rectContainsPoint(fallToLand.character.x, fallToLand.character.y,
+                                 fallToLand.character.nominalBounds.width,
+                                 fallToLand.character.nominalBounds.height,
+                                 fallToLand.point.x, fallToLand.point.y)){
+                console.log("here");
+            }
         }
     }
 
