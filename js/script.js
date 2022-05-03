@@ -82,6 +82,7 @@ function page_init(lib) {
     let farBirdFlyAway = fallThroughSky.cloud_2.bird_fly_away;
 
     let fallToLand = page.fallToLand;
+    fallToLand.cloud_burst.gotoAndStop(0);
     console.log(fallToLand);
 
     AddOnFrameEvent(closeBirdFlyAway, closeBirdFlyAway.totalFrames - 1, function(){
@@ -227,18 +228,28 @@ function page_init(lib) {
             console.log("nom bounds");
             console.log(fallToLand.character.nominalBounds);
 
-
+            console.log("char loc: ");
+            console.log(fallToLand.character.x + ", "+fallToLand.character.y);
 
             console.log("point");
             console.log(fallToLand.point.x + " " + fallToLand.point.y);
 
+            console.log("point nom bounds");
+            console.log(fallToLand.point.nominalBounds);
+
             // if(fallToLand.character.nominalBounds.contains(fallToLand.point.x, fallToLand.point.y, 1, 1)){
-            if(rectContainsPoint(fallToLand.character.x, fallToLand.character.y,
-                                 fallToLand.character.nominalBounds.width,
-                                 fallToLand.character.nominalBounds.height,
-                                 fallToLand.point.x, fallToLand.point.y)){
-                console.log("here");
-            }
+            //NOTE: (x-min)/(max-min)
+            let cloudDistance = 700;
+            let fallToLandCloudLerp = (fallToLand.character.y - fallToLand.point.y) / (fallToLand.point.y+cloudDistance - fallToLand.point.y);
+            fallToLandCloudLerp = clamp(fallToLandCloudLerp, 0, 1);
+            console.log("fall to land lerp: "+fallToLandCloudLerp);
+            fallToLand.cloud_burst.gotoAndStop(fallToLandCloudLerp*fallToLand.cloud_burst.totalFrames);
+            // if(rectContainsPoint(fallToLand.character.x, fallToLand.character.y,
+            //                      fallToLand.character.nominalBounds.width,
+            //                      fallToLand.character.nominalBounds.height,
+            //                      fallToLand.point.x, fallToLand.point.y)){
+            //     console.log("here");
+            // }
         }
     }
 
