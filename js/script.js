@@ -237,9 +237,11 @@ function page_init(lib) {
         let fallToLandScroll = RectNormalPositionOnScreen(page.y + fallToLand.y, fallToLand.nominalBounds.height, canvas.clientHeight);
         if(fallToLandScroll >= 0 && fallToLandScroll <= 1){
             let normOffset = fallToLand.nominalBounds.height/1.5;
-            let characterNormPos = RectNormalPositionOnScreen(page.y + fallToLand.y + normOffset, fallToLand.nominalBounds.height - canvas.clientHeight - normOffset, canvas.clientHeight);
+            let characterNormPos = RectNormalPositionOnScreen(page.y + fallToLand.y, fallToLand.nominalBounds.height - canvas.clientHeight, canvas.clientHeight);
+            // let characterNormPos = RectNormalPositionOnScreen(page.y + fallToLand.y + normOffset, fallToLand.nominalBounds.height - canvas.clientHeight - normOffset, canvas.clientHeight);
             console.log("char normal pos: " + characterNormPos);
-            characterNormPos = ease(characterNormPos);
+            // characterNormPos = ease(characterNormPos);
+            characterNormPos = Math.pow(characterNormPos, 5)*(3-(2*characterNormPos));
             console.log("char normal pos: " + characterNormPos);
             let canvasCenter = Math.abs(page.y) - fallToLand.y + (canvas.clientHeight / 2) + (fallToLand.character.nominalBounds.height / 2);
             fallToLand.character.y = lerp(canvasCenter, fallToLand.point_land.y, characterNormPos);
