@@ -12,6 +12,14 @@ function lerp(start, end, amt) {
     return (1 - amt) * start + amt * end
 }
 
+function NormalizeNumInRange(n, min, max){
+
+    //NOTE: (x-min)/(max-min)
+    let result = (n - min) / (max - min);
+
+    return result
+}
+
 function clamp(num, min, max) {
     return Math.min(Math.max(num, min), max);
 }
@@ -239,7 +247,7 @@ function page_init(lib) {
 
             // if(fallToLand.character.nominalBounds.contains(fallToLand.point.x, fallToLand.point.y, 1, 1)){
             //NOTE: (x-min)/(max-min)
-            let cloudDistance = 700;
+            let cloudDistance = 1000;
             let fallToLandCloudLerp = (fallToLand.character.y - fallToLand.point.y) / (fallToLand.point.y+cloudDistance - fallToLand.point.y);
             fallToLandCloudLerp = clamp(fallToLandCloudLerp, 0, 1);
             console.log("fall to land lerp: "+fallToLandCloudLerp);
