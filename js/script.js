@@ -8,6 +8,11 @@ function WindowScrollNormalPosition() {
     return window.scrollY / (GetPageHeight() - window.innerHeight);
 }
 
+function ease(x){
+    x = clamp(x,0,1);
+    return x*x*(3-(2*x));
+}
+
 function lerp(start, end, amt) {
     return (1 - amt) * start + amt * end
 }
@@ -231,7 +236,14 @@ function page_init(lib) {
 
         let fallToLandScroll = RectNormalPositionOnScreen(page.y + fallToLand.y, fallToLand.nominalBounds.height, canvas.clientHeight);
         if(fallToLandScroll >= 0 && fallToLandScroll <= 1){
-            fallToLand.character.y = Math.abs(page.y) - fallToLand.y + (canvas.clientHeight / 2) + (fallToLand.character.nominalBounds.height / 2);
+            let normOffset = fallToLand.nominalBounds.height/1.5;
+            let characterNormPos = RectNormalPositionOnScreen(page.y + fallToLand.y + normOffset, fallToLand.nominalBounds.height - canvas.clientHeight - normOffset, canvas.clientHeight);
+            console.log("char normal pos: " + characterNormPos);
+            characterNormPos = ease(characterNormPos);
+            console.log("char normal pos: " + characterNormPos);
+            let canvasCenter = Math.abs(page.y) - fallToLand.y + (canvas.clientHeight / 2) + (fallToLand.character.nominalBounds.height / 2);
+            fallToLand.character.y = lerp(canvasCenter, fallToLand.point_land.y, characterNormPos);
+            // fallToLand.character.y = Math.abs(page.y) - fallToLand.y + (canvas.clientHeight / 2) + (fallToLand.character.nominalBounds.height / 2);
 
             console.log("nom bounds");
             console.log(fallToLand.character.nominalBounds);
