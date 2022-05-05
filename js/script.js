@@ -265,7 +265,7 @@ function page_init(lib) {
             let fallToLandCloudLerp = (fallToLand.character.y - fallToLand.point.y) / (fallToLand.point.y+cloudDistance - fallToLand.point.y);
             fallToLandCloudLerp = clamp(fallToLandCloudLerp, 0, 1);
             console.log("fall to land lerp: "+fallToLandCloudLerp);
-            fallToLand.cloud_burst.gotoAndStop(fallToLandCloudLerp*fallToLand.cloud_burst.totalFrames);
+            fallToLand.cloud_burst.gotoAndStop(fallToLandCloudLerp*(fallToLand.cloud_burst.totalFrames-1));
             // if(rectContainsPoint(fallToLand.character.x, fallToLand.character.y,
             //                      fallToLand.character.nominalBounds.width,
             //                      fallToLand.character.nominalBounds.height,
