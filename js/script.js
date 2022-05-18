@@ -155,6 +155,10 @@ function page_init(lib) {
 
         scrollEnd = calcScrollEnd();
         onScroll(null);
+
+        stage.tickOnUpdate = false;
+        stage.update();
+        stage.tickOnUpdate = true;
     }
 
     function onScroll(e) {
