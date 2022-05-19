@@ -95,6 +95,8 @@ function page_init(lib) {
     let farBirdFlyAway = fallThroughSky.cloud_2.bird_fly_away;
 
     let fallToLand = page.fallToLand;
+    fallToLand.point.alpha = 0;
+    fallToLand.point_land.alpha = 0;
     fallToLand.cloud_burst.gotoAndStop(0);
     console.log(fallToLand);
 
@@ -129,8 +131,8 @@ function page_init(lib) {
 
 
     let endLand = page.end_land;
-    console.log(endLand);
-    endLand.room.alpha = 0;
+    // console.log(endLand);
+    // endLand.room.alpha = 0;
 
 
 
@@ -165,7 +167,7 @@ function page_init(lib) {
 
         let currentScroll = WindowScrollNormalPosition();
 
-        let blindsScroll = RectNormalPositionOnScreen(blinds.localToGlobal(0, 0).y + 250, blinds.nominalBounds.height - 750, canvas.clientHeight);
+        let blindsScroll = RectNormalPositionOnScreen(blinds.localToGlobal(0, 0).y + 350, blinds.nominalBounds.height - 750, canvas.clientHeight);
         let blindsCurrentFrame = clamp(blindsScroll * (blinds.totalFrames - 1), 0, blinds.totalFrames - 1);
         blinds.gotoAndStop(blindsCurrentFrame);
 
@@ -230,26 +232,16 @@ function page_init(lib) {
         let fallTowardsCameraCurrentFrame = Math.abs(clamp(fallTowardsCameraScroll * fallTowardsCamera.totalFrames - 1, 0, fallTowardsCamera.totalFrames - 1));
         fallTowardsCamera.gotoAndStop(fallTowardsCameraCurrentFrame);
 
-        if (WindowScrollNormalPosition() >= .99) {
-            endLand.room.alpha = 1;
-            endLand.land.alpha = 0;
-        } else {
-            endLand.room.alpha = 0;
-            endLand.land.alpha = 1;
-        }
 
         let fallToLandScroll = RectNormalPositionOnScreen(page.y + fallToLand.y, fallToLand.nominalBounds.height, canvas.clientHeight);
         if(fallToLandScroll >= 0 && fallToLandScroll <= 1){
             let normOffset = fallToLand.nominalBounds.height/1.5;
             let characterNormPos = RectNormalPositionOnScreen(page.y + fallToLand.y, fallToLand.nominalBounds.height - canvas.clientHeight, canvas.clientHeight);
-            // let characterNormPos = RectNormalPositionOnScreen(page.y + fallToLand.y + normOffset, fallToLand.nominalBounds.height - canvas.clientHeight - normOffset, canvas.clientHeight);
             console.log("char normal pos: " + characterNormPos);
-            // characterNormPos = ease(characterNormPos);
             characterNormPos = Math.pow(characterNormPos, 5)*(3-(2*characterNormPos));
             console.log("char normal pos: " + characterNormPos);
             let canvasCenter = Math.abs(page.y) - fallToLand.y + (canvas.clientHeight / 2) + (fallToLand.character.nominalBounds.height / 2);
             fallToLand.character.y = lerp(canvasCenter, fallToLand.point_land.y, characterNormPos);
-            // fallToLand.character.y = Math.abs(page.y) - fallToLand.y + (canvas.clientHeight / 2) + (fallToLand.character.nominalBounds.height / 2);
 
             console.log("nom bounds");
             console.log(fallToLand.character.nominalBounds);
@@ -263,19 +255,12 @@ function page_init(lib) {
             console.log("point nom bounds");
             console.log(fallToLand.point.nominalBounds);
 
-            // if(fallToLand.character.nominalBounds.contains(fallToLand.point.x, fallToLand.point.y, 1, 1)){
             //NOTE: (x-min)/(max-min)
             let cloudDistance = 1000;
             let fallToLandCloudLerp = (fallToLand.character.y - fallToLand.point.y) / (fallToLand.point.y+cloudDistance - fallToLand.point.y);
             fallToLandCloudLerp = clamp(fallToLandCloudLerp, 0, 1);
             console.log("fall to land lerp: "+fallToLandCloudLerp);
             fallToLand.cloud_burst.gotoAndStop(fallToLandCloudLerp*(fallToLand.cloud_burst.totalFrames-1));
-            // if(rectContainsPoint(fallToLand.character.x, fallToLand.character.y,
-            //                      fallToLand.character.nominalBounds.width,
-            //                      fallToLand.character.nominalBounds.height,
-            //                      fallToLand.point.x, fallToLand.point.y)){
-            //     console.log("here");
-            // }
         }
     }
 
