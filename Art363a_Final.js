@@ -16,7 +16,7 @@ lib.ssMetadata = [
 		{name:"Art363a_Final_atlas_11", frames: [[0,0,1111,1531]]},
 		{name:"Art363a_Final_atlas_12", frames: [[0,0,1110,1530]]},
 		{name:"Art363a_Final_atlas_13", frames: [[0,0,1109,1529]]},
-		{name:"Art363a_Final_atlas_14", frames: [[0,0,1356,156],[0,158,1350,152],[0,312,1342,151],[1352,283,416,353],[0,465,454,283],[456,465,454,263],[1770,283,249,412],[1358,0,555,281]]},
+		{name:"Art363a_Final_atlas_14", frames: [[0,0,1356,156],[0,158,1350,152],[0,312,1342,151],[1352,283,416,353],[0,465,454,283],[456,465,454,263],[1770,283,249,412],[1358,0,555,281],[912,638,565,88]]},
 		{name:"Art363a_Final_atlas_15", frames: [[0,0,1091,495],[0,497,1089,491],[0,990,1085,492],[1512,476,534,432],[1093,0,764,474],[0,1702,1590,299],[1091,497,419,1203]]},
 		{name:"Art363a_Final_atlas_16", frames: [[0,0,1094,718],[0,720,1024,644],[0,1366,1714,354]]},
 		{name:"Art363a_Final_atlas_17", frames: [[0,0,1556,526],[0,1249,1094,719],[0,528,1098,719]]},
@@ -305,6 +305,13 @@ p.nominalBounds = new cjs.Rectangle(0,0,1219,2169);
 (lib.CachedBmp_36 = function() {
 	this.initialize(ss["Art363a_Final_atlas_15"]);
 	this.gotoAndStop(6);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.Bitmap1 = function() {
+	this.initialize(ss["Art363a_Final_atlas_14"]);
+	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
 
@@ -703,20 +710,16 @@ if (reversed == null) { reversed = false; }
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},6).to({state:[{t:this.instance_2}]},6).wait(6));
 
-	// Layer_1
-	this.text = new cjs.Text("Falling\nAsleep", "bold 90px 'Berlin Sans FB Demi'");
-	this.text.lineHeight = 103;
-	this.text.lineWidth = 279;
-	this.text.alpha = 0.00392157;
-	this.text.parent = this;
-	this.text.setTransform(4,4,1.993,1.993);
+	// Layer_1_copy
+	this.instance_3 = new lib.Bitmap1();
+	this.instance_3.setTransform(0,443.85);
 
-	this.timeline.addTween(cjs.Tween.get(this.text).wait(18));
+	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(18));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(0,0,564.7,427);
+p.nominalBounds = new cjs.Rectangle(0,42.8,565,489.09999999999997);
 
 
 (lib.Sketch_Text_Bright = function(mode,startPosition,loop,reversed) {
@@ -2613,25 +2616,25 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/CachedBmp_1.png?1653007068715", id:"CachedBmp_1"},
-		{src:"images/Art363a_Final_atlas_1.png?1653007068619", id:"Art363a_Final_atlas_1"},
-		{src:"images/Art363a_Final_atlas_2.png?1653007068619", id:"Art363a_Final_atlas_2"},
-		{src:"images/Art363a_Final_atlas_3.png?1653007068619", id:"Art363a_Final_atlas_3"},
-		{src:"images/Art363a_Final_atlas_4.png?1653007068620", id:"Art363a_Final_atlas_4"},
-		{src:"images/Art363a_Final_atlas_5.png?1653007068620", id:"Art363a_Final_atlas_5"},
-		{src:"images/Art363a_Final_atlas_6.png?1653007068620", id:"Art363a_Final_atlas_6"},
-		{src:"images/Art363a_Final_atlas_7.png?1653007068620", id:"Art363a_Final_atlas_7"},
-		{src:"images/Art363a_Final_atlas_8.png?1653007068620", id:"Art363a_Final_atlas_8"},
-		{src:"images/Art363a_Final_atlas_9.png?1653007068620", id:"Art363a_Final_atlas_9"},
-		{src:"images/Art363a_Final_atlas_10.png?1653007068620", id:"Art363a_Final_atlas_10"},
-		{src:"images/Art363a_Final_atlas_11.png?1653007068620", id:"Art363a_Final_atlas_11"},
-		{src:"images/Art363a_Final_atlas_12.png?1653007068620", id:"Art363a_Final_atlas_12"},
-		{src:"images/Art363a_Final_atlas_13.png?1653007068620", id:"Art363a_Final_atlas_13"},
-		{src:"images/Art363a_Final_atlas_14.png?1653007068620", id:"Art363a_Final_atlas_14"},
-		{src:"images/Art363a_Final_atlas_15.png?1653007068620", id:"Art363a_Final_atlas_15"},
-		{src:"images/Art363a_Final_atlas_16.png?1653007068620", id:"Art363a_Final_atlas_16"},
-		{src:"images/Art363a_Final_atlas_17.png?1653007068620", id:"Art363a_Final_atlas_17"},
-		{src:"images/Art363a_Final_atlas_18.png?1653007068620", id:"Art363a_Final_atlas_18"}
+		{src:"images/CachedBmp_1.png?1653008104340", id:"CachedBmp_1"},
+		{src:"images/Art363a_Final_atlas_1.png?1653008104248", id:"Art363a_Final_atlas_1"},
+		{src:"images/Art363a_Final_atlas_2.png?1653008104248", id:"Art363a_Final_atlas_2"},
+		{src:"images/Art363a_Final_atlas_3.png?1653008104248", id:"Art363a_Final_atlas_3"},
+		{src:"images/Art363a_Final_atlas_4.png?1653008104248", id:"Art363a_Final_atlas_4"},
+		{src:"images/Art363a_Final_atlas_5.png?1653008104248", id:"Art363a_Final_atlas_5"},
+		{src:"images/Art363a_Final_atlas_6.png?1653008104248", id:"Art363a_Final_atlas_6"},
+		{src:"images/Art363a_Final_atlas_7.png?1653008104249", id:"Art363a_Final_atlas_7"},
+		{src:"images/Art363a_Final_atlas_8.png?1653008104249", id:"Art363a_Final_atlas_8"},
+		{src:"images/Art363a_Final_atlas_9.png?1653008104249", id:"Art363a_Final_atlas_9"},
+		{src:"images/Art363a_Final_atlas_10.png?1653008104249", id:"Art363a_Final_atlas_10"},
+		{src:"images/Art363a_Final_atlas_11.png?1653008104249", id:"Art363a_Final_atlas_11"},
+		{src:"images/Art363a_Final_atlas_12.png?1653008104249", id:"Art363a_Final_atlas_12"},
+		{src:"images/Art363a_Final_atlas_13.png?1653008104249", id:"Art363a_Final_atlas_13"},
+		{src:"images/Art363a_Final_atlas_14.png?1653008104249", id:"Art363a_Final_atlas_14"},
+		{src:"images/Art363a_Final_atlas_15.png?1653008104249", id:"Art363a_Final_atlas_15"},
+		{src:"images/Art363a_Final_atlas_16.png?1653008104249", id:"Art363a_Final_atlas_16"},
+		{src:"images/Art363a_Final_atlas_17.png?1653008104249", id:"Art363a_Final_atlas_17"},
+		{src:"images/Art363a_Final_atlas_18.png?1653008104249", id:"Art363a_Final_atlas_18"}
 	],
 	preloads: []
 };
